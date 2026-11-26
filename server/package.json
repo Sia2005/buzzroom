@@ -1,0 +1,42 @@
+{
+  "name": "buzzroom-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real-time multiplayer quiz server: Express, Socket.IO, Redis, MongoDB, Gemini",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@google/genai": "^3.6.1",
+    "@socket.io/redis-adapter": "^8.3.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "ioredis": "^5.11.1",
+    "mongoose": "^8.24.11",
+    "multer": "^2.5.0",
+    "pdf-parse": "^2.4.5",
+    "socket.io": "^4.8.4",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.14.0",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.10.1",
+    "socket.io-client": "^4.8.4",
+    "vitest": "^5.1.2"
+  }
+}

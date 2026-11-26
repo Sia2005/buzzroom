@@ -1,0 +1,17 @@
+{
+  "name": "buzzroom-loadtest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simulated players that measure Buzzroom broadcast latency",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "loadtest": "node bots.js",
+    "check": "node --check bots.js"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.8.4"
+  }
+}
